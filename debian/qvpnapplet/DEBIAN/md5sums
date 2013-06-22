@@ -1,0 +1,5 @@
+7ce7ba392d196e8ddf4dfff60fdd1470  usr/bin/qvpnapplet
+da38148c3bb76e89d5f9a00ae9d3e07b  usr/sbin/qvpnd
+f6685fe47d9dcc166602c5d938a2fa48  usr/share/dbus-1/system-services/net.pocentek.vpn.service
+3f71702035db22db965c204d9f7daba2  usr/share/doc/qvpnapplet/changelog.Debian.gz
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/qvpnapplet/copyright

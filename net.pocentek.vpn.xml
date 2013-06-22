@@ -1,0 +1,22 @@
+<node>
+  <interface name="net.pocentek.vpn">
+    <method name="Status">
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
+      <arg name="status" type="a{sv}" direction="out" />
+    </method>
+    <method name="Start">
+      <arg name="name" type="s" direction="in" />
+      <arg name="ret" type="b" direction="out" />
+    </method>
+    <method name="Stop">
+      <arg name="name" type="s" direction="in" />
+      <arg name="ret" type="b" direction="out" />
+    </method>
+
+    <signal name="StateChanged">
+      <arg name="name" type="s" direction="out"/>
+      <arg name="state" type="b" direction="out"/>
+    </signal>
+  </interface>
+</node>
+

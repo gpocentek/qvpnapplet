@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=net.pocentek.vpn
+Exec=@CMAKE_INSTALL_PREFIX@/sbin/qvpnd
+User=root

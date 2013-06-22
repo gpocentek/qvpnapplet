@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=net.pocentek.vpn
+Exec=/usr/sbin/qvpnd
+User=root

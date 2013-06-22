@@ -1,0 +1,12 @@
+Source: qvpnapplet
+Priority: optional
+Section: net
+Maintainer: Gauvain Pocentek <gauvain@pocentek.net>
+Build-Depends: debhelper (>= 7), libqt4-dev, cmake
+Standards-Version: 3.9.3
+
+Package: qvpnapplet
+Architecture: any
+Depends: ${shlibs:Depends}, openvpn
+Description: applet to start/stop vpn connections
+
