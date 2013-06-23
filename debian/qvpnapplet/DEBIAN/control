@@ -1,9 +1,0 @@
-Package: qvpnapplet
-Version: 0.1-0
-Architecture: amd64
-Maintainer: Gauvain Pocentek <gauvain@pocentek.net>
-Installed-Size: 171
-Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libqt4-dbus (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.1.1), openvpn
-Section: net
-Priority: optional
-Description: applet to start/stop vpn connections
