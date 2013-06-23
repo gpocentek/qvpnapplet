@@ -16,7 +16,7 @@ make
 make install # as root
 `````
 
-You will also need to install `net.pocentek.vpn.xml` in `/etc/dbus-1/system.d`
+You will also need to install `net.pocentek.vpn.xml` in `/etc/dbus-1/system.d/`
 (tweak it to fit your needs).
 
 ## Debian package
@@ -37,5 +37,5 @@ status for this connection in the applet contextual menu.
 ## Bugs
 
 * The daemon fails to start as a DBus service. Make sure to start it with an
-  init script or similar (I start it in /etc/rc.local on debian/ubuntu).
+  init script or similar (I start it in `/etc/rc.local` on Debian/Ubuntu).
 
