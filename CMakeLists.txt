@@ -7,7 +7,7 @@ FIND_PACKAGE(Qt4 REQUIRED)
 add_subdirectory(daemon)
 add_subdirectory(applet)
 
-set(VERSION 0.1)
+set(VERSION 0.2)
 set(SHAREDIR "${CMAKE_INSTALL_PREFIX}/share/qvpnapplet")
 
 configure_file(config.h.cmake config.h)

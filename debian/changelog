@@ -1,3 +1,9 @@
+qvpnapplet (0.2-0) unstable; urgency=medium
+
+  * New release.
+
+ -- Gauvain Pocentek <gauvain@pocentek.net>  Fri, 29 Jan 2016 08:05:30 +0100
+
 qvpnapplet (0.1-0) unstable; urgency=low
 
   * Initial release.
