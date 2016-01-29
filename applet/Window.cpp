@@ -36,8 +36,28 @@ Window::Window()
 
 void Window::onStateChanged(const QString &name, bool state)
 {
+    bool active = false;
     VpnAction *a = buttons[name];
     a->setState(state ? VpnAction::StateUp : VpnAction::StateDown);
+    if (state == VpnAction::StateUp)
+        setIcon(true);
+
+
+    /* Check if we have a connection to display the correct icon */
+    QVariantMap rep = iface->Status();
+    QMap<QString, QVariant>::const_iterator i = rep.constBegin();
+    while (i != rep.constEnd())
+    {
+        VpnAction *action = new VpnAction(i.key(), this);
+        if (i.value().toBool())
+        {
+            active = true;
+            break;
+        }
+        ++i;
+    }
+
+    setIcon(active);
 }
 
 void Window::onActionTriggered(QString &name, VpnAction::State curState)
@@ -46,6 +66,13 @@ void Window::onActionTriggered(QString &name, VpnAction::State curState)
         iface->Stop(name);
     else /* TODO: handle unknown state properly */
         iface->Start(name);
+}
+
+void Window::setIcon(bool active)
+{
+    QIcon icon(active ? ":images/vpnapplet-active.png"
+                      : ":images/vpnapplet.png");
+    trayIcon->setIcon(icon);
 }
 
 void Window::createTrayIcon()

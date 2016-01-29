@@ -1,6 +1,7 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
    <file>images/vpnapplet.png</file>
+   <file>images/vpnapplet-active.png</file>
    <file>images/on.png</file>
 </qresource>
 </RCC>

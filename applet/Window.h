@@ -45,6 +45,7 @@ private:
 
     void createTrayIcon();
     void populateMenu();
+    void setIcon(bool);
 
     VpnIf *iface;
 };
